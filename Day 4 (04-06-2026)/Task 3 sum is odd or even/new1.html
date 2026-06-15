@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type ="number" id ="num1" placeholder="Enter first number" >
+    <input type ="number" id ="num2" placeholder="Enter second number">
+    <button onclick = "sum()">SUBMIT</button>
+    <p id ="r1"></p>
+    <p id="res"></p>
+    <script>
+        function sum(){
+           let n1 = document.getElementById("num1").value;
+            let n2 = document.getElementById("num2").value;
+            let sum = Number(n1) + Number(n2);
+            let num =0;
+            
+            while(sum>0){
+                let r = sum%10;
+                num += r;
+                sum /= 10;
+            }
+            document.getElementById("r1").textContent = sum;
+            if(num%2==0){
+               document.getElementById("res").textContent = "Its is Even number";
+            }else{
+                  document.getElementById("res").textContent = "Its is odd number";
+            }
+           return  document.getElementById("res").textContent ;
+        }
+    </script>
+</body>
+</html>

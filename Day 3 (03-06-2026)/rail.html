@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h2>Train Seat Finder</h2>
+<input type="number" id="seatNo" placeholder="Enter Seat Number (1-80)">
+<button onclick="findSeat3()">3rd</button>
+<button onclick="findSeat2()">2nd</button>
+
+<p id="result"></p>
+<script>
+function findSeat3() {
+    let seatNo = parseInt(document.getElementById("seatNo").value);
+    if (seatNo < 1 || seatNo > 80) {
+        document.getElementById("result").textContent =
+        "Please enter a seat number between 1 and 80";
+        return;
+    }
+    let pos = seatNo % 8;
+    let berth;
+    if (pos == 1)
+        berth = "Lower Berth";
+    else if (pos == 2)
+        berth = "Middle Berth";
+    else if (pos == 3)
+        berth = "Upper Berth";
+    else if (pos == 4)
+        berth = "Lower Berth";
+    else if (pos == 5)
+        berth = "Middle Berth";
+    else if (pos == 6)
+        berth = "Upper Berth";
+    else if (pos == 7)
+        berth = "Side Lower";
+    else
+        berth = "Side Upper";
+    document.getElementById("result").textContent =
+    "Seat No " + seatNo + " : " + berth;
+}
+function findSeat2(){
+  let seatNo = parseInt(document.getElementById("seatNo").value);
+    if (seatNo < 1 || seatNo > 60) {
+        document.getElementById("result").textContent =
+        "Please enter a seat number between 1 and 60";
+        return;
+    }
+    let pos = seatNo % 6;
+    let berth;
+  if (pos == 1 || pos==3)
+        berth = "Lower Berth";
+    else if (pos == 2|| pos==4)
+        berth = "Upper Berth";
+    else if (pos == 5)
+        berth = "Side Lower Berth";
+else
+berth = "Side Upper Berth";
+document.getElementById("result").textContent =
+    "Seat No " + seatNo + " : " + berth;
+}
+</script>
+</body>
+</html>

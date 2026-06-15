@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+             background-color: #ffe3e0;
+   
+}
+
+header,
+footer {
+    background-color: #DB6551;
+    height: 70px;
+    text-align: center;
+    color: white;
+}
+
+p {
+    color: #DB6551;
+    font-size: 20px;
+    font-family: cursive;
+    font-weight:700;
+}
+
+header {
+    font-size: 40px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+footer {
+    font-size: 20px;
+}
+
+.form-box {
+    width: 375px;
+    margin: 40px auto;
+    padding: 1%;
+    border: 2px solid #333;
+    background-color: beige;
+    border-radius: 10px;
+}
+
+.form-box input {
+    padding: 1%;
+    margin: 30px;
+    background-color:#FF8DC;
+    border-radius: 30px;
+}
+.form-box button{
+    height: 30px;
+    margin: 25px;
+    align-self: center;
+    font-weight:600;
+     color: rgb(190, 48, 159);
+}
+
+form {
+    color: rgb(190, 48, 159);
+    background-color: beige;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.form-box textarea {
+    padding: 1%;
+    margin: 10px;
+    height: 80px;
+    background-color: rgb(245, 217, 180);
+    border-radius: 10px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    background-color: #FFCBA4;
+    margin: 10px;
+    padding: 10px; 
+    align-items:left;
+    justify-content:space-around;
+    color:purple;
+    border-radius:20px;/* Added px unit */
+    gap: 20px;
+}
+.container #c1{
+    border-radius:70px;
+     width: 70px;
+     text-align: center;
+    height: 20px; 
+    padding: 10px; 
+    
+}
+
+    </style>
+    <script>
+       
+        function c(){
+            alert('clicked');
+        }
+        </script>
+</head>
+<body>
+    <header>😁Dhivya's Website❤️</header>
+     <div class="container">
+    <div id = "c1">About</div>
+    <div id ="c1">Home</div>
+    <div id ="c1">Contact us</div>
+    <div id ="c1">profile</div>
+</div>
+    <p>Chandrasekaran Joseph Vijay (born 22 June 1974) is an Indian politician, and former actor who is currently serving as the ninth chief minister of Tamil Nadu since May 2026. He is the founder and president of the political party <b style="color:black;"> <i>Tamilaga Vettri Kazhagam </i>(TVK)</b>. Prior to entering politics, he was a leading actor in Tamil cinema and among the highest-paid actors in India, having won numerous accolades including multiple Tamil Nadu State Film Awards and South Indian International Movie Awards.
+Following a stint as a child actor in the 1980s</p>
+<div class ="form-box">
+    <form>
+        <label>Firstname :</label>
+        <input type ="text" placeholder ="First name">
+        <label>Lastname :</label>
+        <input type ="text" placeholder ="Last name">
+        <label>phone number :</label>
+         <input type ="number" placeholder ="number">
+        <label>Date of birth :</label>
+         <input type ="date">
+        <label>address</label>
+        <textarea></textarea>
+        <br>
+        <button onclick = "c()">SUBMIT</button>
+    </form>
+
+    </div>
+   
+    <footer>&copy; All rights are reserved</footer>
+    
+</body>
+</html>

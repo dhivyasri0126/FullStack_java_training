@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="handleclick()">Click Me</button>
+    <p style ="color:blue;"id ="res"></p>
+    <script>
+        function handleclick(){
+        let x =console.log();
+        if(x>=10 && x<=50){
+            console.log("Its between 10 and 50");
+            document.getElementById("res").textContent ="Its between 10 and 50";
+        }else if(x>50 && x<=100){
+            console.log("Its between  50 and 100")
+                 document.getElementById("res").textContent ="Its between  50 and 100";
+        }else if(x>100){
+             console.log("Its greater than 100")
+            document.getElementById("res").textContent ="Its greater than 100";
+        }else{
+             console.log("Its less than 100")
+            document.getElementById("res").textContent ="Its less than 100";
+        }
+    }
+    </script>
+</body>
+</html>
