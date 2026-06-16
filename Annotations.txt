@@ -1,0 +1,20 @@
+Annotations:
+
+	1. @SpringBootApplication - //used to initialize springboot application
+	2. @Entity - // usedwhile connecting to database
+	3. @Data - //Lombok generates getters/setters,toString,equals,hashCode
+	4. @Id - //
+	5. @GeneratedValue
+	6. Jpa - java persistence api.
+	7. @Service - //this is the class which handle logical part and internally do nothing
+	8. @Autowired - //automatically retrieved (to automatically inject dependent beans (objects) into your classes)
+	9. @GeneratedValue - // @GeneratedValue is used with @Id to generate primary key values automatically.
+	10. @Id - //@Id is a JPA annotation used to mark a field as the Primary Key of a database table.
+	GeneratedType:
+			IDENTITY  : Student --> Database --> ID = 1
+			SEQUENCE  : Student --> Sequence --> ID = 100 --> Database
+			TABLE	  : Student --> id_generator table --> ID = 5 --> Database
+			AUTO      : Student --> JPA chooses --> Database
+	11.@RestController - //@RestController is used to create REST APIs.
+	12.@Controller - //"This class is responsible for handling requests coming from the browser and deciding what response to send back."
+	13.@RequestMapping is used to map URLs to classes or methods.
